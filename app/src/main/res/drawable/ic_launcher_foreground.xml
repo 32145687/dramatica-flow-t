@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <group
+        android:translateX="27"
+        android:translateY="18">
+        <!-- 钢笔笔身 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M12,0 L24,0 L24,4 L12,4 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M10,4 L26,4 L26,8 L10,8 Z" />
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M8,8 L28,8 L28,14 L8,14 Z" />
+        <!-- 笔杆 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M11,14 L25,14 L25,44 L11,44 Z" />
+        <!-- 笔尖 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M11,44 L25,44 L18,56 Z" />
+        <!-- 墨水滴 -->
+        <path
+            android:fillColor="#FFFFFF"
+            android:pathData="M18,60 m-3,0 a3,3 0 1,1 6,0 a3,3 0 1,1 -6,0" />
+    </group>
+</vector>
