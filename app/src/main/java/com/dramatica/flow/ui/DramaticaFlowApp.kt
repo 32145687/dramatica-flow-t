@@ -179,7 +179,7 @@ fun DramaticaFlowApp(vm: MainViewModel) {
                         NavPage.Tracking -> TrackingScreen(currentBook, hooks, causalChainList, relationships, emotions,
                             onNavigateToFlow = { currentPage = NavPage.Flow })
                         NavPage.Hooks -> HooksScreen(
-                            novelId = currentBook?.id?.toLongOrNull() ?: 0L,
+                            bookId = currentBookId,
                             onNavigateBack = { currentPage = NavPage.Tracking }
                         )
                         NavPage.Timeline -> TimelineScreen(currentBook, currentBookId, timeline, vm)

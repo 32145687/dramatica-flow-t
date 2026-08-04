@@ -24,15 +24,15 @@ import com.dramatica.flow.ui.viewmodel.TrackingViewModel
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun HooksScreen(
-    novelId: Long,
+    bookId: String,
     onNavigateBack: () -> Unit,
     viewModel: TrackingViewModel = viewModel()
 ) {
     val hooks by viewModel.hooks.collectAsState()
-    var selectedHook by remember { mutableStateOf<Hook?>(null) }
+    var selectedHook by remember { mutableStateOf<com.dramatica.flow.data.model.Hook?>(null) }
     
-    LaunchedEffect(novelId) {
-        viewModel.loadHooks(novelId)
+    LaunchedEffect(bookId) {
+        viewModel.loadHooks(bookId)
     }
     
     Scaffold(
