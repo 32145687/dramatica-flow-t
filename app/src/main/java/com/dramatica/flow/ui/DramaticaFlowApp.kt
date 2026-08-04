@@ -79,6 +79,7 @@ fun DramaticaFlowApp(vm: MainViewModel) {
         NavPage.NovelAnalysis -> "参考小说创作"
         NavPage.Tracking -> "一致性追踪"
         NavPage.Timeline -> "时间线"
+        NavPage.Hooks -> "伏笔追踪"
         NavPage.TxtSplit -> "TXT拆分"
         NavPage.ReferenceFlow -> "参考创作"
         NavPage.Settings -> "设置"
@@ -177,6 +178,10 @@ fun DramaticaFlowApp(vm: MainViewModel) {
                         NavPage.WritingSkill -> WritingSkillScreen(vm, currentBookId, onBack = { currentPage = NavPage.Flow })
                         NavPage.Tracking -> TrackingScreen(currentBook, hooks, causalChainList, relationships, emotions,
                             onNavigateToFlow = { currentPage = NavPage.Flow })
+                        NavPage.Hooks -> HooksScreen(
+                            novelId = currentBook?.id?.toLongOrNull() ?: 0L,
+                            onNavigateBack = { currentPage = NavPage.Tracking }
+                        )
                         NavPage.Timeline -> TimelineScreen(currentBook, currentBookId, timeline, vm)
                         NavPage.TxtSplit -> TxtSplitScreen(onBack = { currentPage = NavPage.Home })
                         NavPage.Settings -> SettingsScreen(onBack = { currentPage = NavPage.Home })

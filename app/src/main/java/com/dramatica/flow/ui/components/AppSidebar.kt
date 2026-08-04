@@ -41,6 +41,7 @@ enum class NavPage(
     WritingSkill("写作技能", NavIcons.Style, "创作空间"),
     NovelAnalysis("参考小说", NavIcons.Book, "创作空间"),
     Tracking("一致性追踪", NavIcons.Tracking, "工具面板"),
+    Hooks("伏笔追踪", NavIcons.Hooks, "工具面板"),
     Timeline("时间线", NavIcons.Timeline, "工具面板"),
     TxtSplit("TXT拆分", NavIcons.Split, "工具面板"),
     Settings("设置", NavIcons.Settings, "工具面板")
@@ -301,6 +302,7 @@ object NavIcons {
     val Characters = Icons.Outlined.People
     val Writing = Icons.Outlined.Edit
     val Tracking = Icons.Outlined.Analytics
+    val Hooks = Icons.Outlined.Flag
     val Timeline = Icons.Outlined.Timeline
     val ChevronRight = Icons.Outlined.ChevronRight
     val ChevronLeft = Icons.Outlined.ChevronLeft
